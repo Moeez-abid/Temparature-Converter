@@ -95,6 +95,7 @@ pipeline {
         }
         success {
             echo "Pipeline succeeded! Version ${APP_VERSION} built and tested."
+            echo "${STUDENT_NAME}"
         }
         failure {
             echo "Pipeline failed! Check console output for details."
